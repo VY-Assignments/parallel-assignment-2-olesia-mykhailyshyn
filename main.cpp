@@ -45,7 +45,7 @@ std::mutex secondQueueMutex;
 std::condition_variable secondQueueCV;
 
 std::atomic<bool> stop(false);
-const int maxTasks = 1;
+const int maxTasks = 5;
 int globalTaskId = 0;
 
 void Generator(int taskDuration, int taskId) {
